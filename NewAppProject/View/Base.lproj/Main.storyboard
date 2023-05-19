@@ -3267,7 +3267,7 @@
                                                             </connections>
                                                         </slider>
                                                         <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ctf-dA-xvk">
-                                                            <rect key="frame" x="15" y="152.5" width="324" height="5"/>
+                                                            <rect key="frame" x="15" y="155.5" width="324" height="5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="5" id="zKI-dc-1Bv"/>
                                                             </constraints>
@@ -3323,7 +3323,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qx-Dk-cLW">
-                                                            <rect key="frame" x="309" y="161.5" width="30" height="26.5"/>
+                                                            <rect key="frame" x="309" y="164.5" width="30" height="23.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="30" id="61a-g0-VcG"/>
                                                             </constraints>
@@ -3339,7 +3339,7 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANm-T0-cap">
-                                                            <rect key="frame" x="15" y="164.5" width="8.5" height="20.5"/>
+                                                            <rect key="frame" x="15" y="167.5" width="8.5" height="17.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -3358,7 +3358,7 @@
                                                         <constraint firstItem="4qx-Dk-cLW" firstAttribute="top" secondItem="ctf-dA-xvk" secondAttribute="bottom" constant="4" id="LgE-VG-D24"/>
                                                         <constraint firstItem="Rev-p7-rVp" firstAttribute="centerY" secondItem="C82-zq-E9x" secondAttribute="centerY" id="Li3-8i-IDm"/>
                                                         <constraint firstItem="sSS-g6-6cH" firstAttribute="trailing" secondItem="PZc-OP-e0Z" secondAttribute="trailing" id="OA4-51-iYj"/>
-                                                        <constraint firstItem="ctf-dA-xvk" firstAttribute="top" secondItem="Rev-p7-rVp" secondAttribute="bottom" constant="9" id="Vcv-ZT-2gO"/>
+                                                        <constraint firstItem="ctf-dA-xvk" firstAttribute="top" secondItem="Rev-p7-rVp" secondAttribute="bottom" constant="12" id="Vcv-ZT-2gO"/>
                                                         <constraint firstItem="PZc-OP-e0Z" firstAttribute="top" secondItem="sSS-g6-6cH" secondAttribute="bottom" constant="8" symbolic="YES" id="WJ6-iM-F5t"/>
                                                         <constraint firstItem="Rev-p7-rVp" firstAttribute="leading" relation="lessThanOrEqual" secondItem="12y-lw-UFw" secondAttribute="trailing" constant="42" id="X3n-2E-kuo"/>
                                                         <constraint firstItem="sSS-g6-6cH" firstAttribute="top" secondItem="030-4g-Ifp" secondAttribute="top" id="YXY-ea-jVZ"/>
