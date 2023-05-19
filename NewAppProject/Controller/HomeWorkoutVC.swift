@@ -33,6 +33,7 @@ class HomeWorkoutVC: UIViewController {
         
         createArr()
      
+    
            
     }
  
@@ -40,17 +41,17 @@ class HomeWorkoutVC: UIViewController {
     //Array creating for Table Data
     func createArr(){
         
-        let obj1 = HomeWorkoutCellData(arrColors: UIColor.yellow, WorkType: "Running", Switch: false, Slider: 7, starview: 5.3)
-        let obj2 = HomeWorkoutCellData(arrColors: UIColor.red, WorkType: "Push-Ups", Switch: false, Slider: 20, starview: 5.3)
-        let obj3 = HomeWorkoutCellData(arrColors: UIColor.green, WorkType: "Strecthing", Switch: false, Slider: 30, starview: 5.3)
-        let obj4 = HomeWorkoutCellData(arrColors: UIColor.orange, WorkType: "Playing", Switch: false, Slider: 40, starview: 5.3)
-        let obj5 = HomeWorkoutCellData(arrColors: UIColor.blue, WorkType: "Gamming", Switch: false, Slider: 50, starview: 5.3)
-        let obj6 = HomeWorkoutCellData(arrColors: UIColor.purple, WorkType: "Singing", Switch: false, Slider: 60, starview: 5.3)
-        let obj7 = HomeWorkoutCellData(arrColors: UIColor.brown, WorkType: "Swiming", Switch: false, Slider: 10, starview: 5.3)
-        let obj8 = HomeWorkoutCellData(arrColors: UIColor.black, WorkType: "Catching", Switch: false, Slider: 20, starview: 5.3)
-        let obj9 = HomeWorkoutCellData(arrColors: UIColor.green, WorkType: "Eating", Switch: false, Slider: 30, starview: 5.3)
-        let obj10 = HomeWorkoutCellData(arrColors: UIColor.red, WorkType: "Dancing", Switch: false, Slider: 40, starview: 5.3)
-        let obj11 = HomeWorkoutCellData(arrColors: UIColor.magenta, WorkType: "Putting", Switch: false, Slider: 50, starview: 5.3)
+        let obj1 = HomeWorkoutCellData(arrColors: UIColor.yellow, WorkType: "Running", Switch: false, Slider: 7, starview: 2.2)
+        let obj2 = HomeWorkoutCellData(arrColors: UIColor.red, WorkType: "Push-Ups", Switch: true, Slider: 20, starview: 1.3)
+        let obj3 = HomeWorkoutCellData(arrColors: UIColor.green, WorkType: "Strecthing", Switch: false, Slider: 30, starview: 1.5)
+        let obj4 = HomeWorkoutCellData(arrColors: UIColor.orange, WorkType: "Playing", Switch: false, Slider: 40, starview: 3)
+        let obj5 = HomeWorkoutCellData(arrColors: UIColor.blue, WorkType: "Gamming", Switch: false, Slider: 50, starview: 2.3)
+        let obj6 = HomeWorkoutCellData(arrColors: UIColor.purple, WorkType: "Singing", Switch: false, Slider: 60, starview: 1.2)
+        let obj7 = HomeWorkoutCellData(arrColors: UIColor.brown, WorkType: "Swiming", Switch: true, Slider: 10, starview: 1.3)
+        let obj8 = HomeWorkoutCellData(arrColors: UIColor.black, WorkType: "Catching", Switch: false, Slider: 20, starview: 0.1)
+        let obj9 = HomeWorkoutCellData(arrColors: UIColor.green, WorkType: "Eating", Switch: true, Slider: 30, starview: 1.2)
+        let obj10 = HomeWorkoutCellData(arrColors: UIColor.red, WorkType: "Dancing", Switch: false, Slider: 40, starview: 2.2)
+        let obj11 = HomeWorkoutCellData(arrColors: UIColor.magenta, WorkType: "Putting", Switch: true, Slider: 50, starview: 2)
         
         self.ArrWorkOut.append(obj1)
         self.ArrWorkOut.append(obj2)
@@ -112,11 +113,13 @@ class HomeWorkoutVC: UIViewController {
         if obj.Switch == true{
             obj.Switch = false
             obj.Slider = Int(value)
+            cell.cosmosRatingView.settings.updateOnTouch = false
             cell.mySlider.isEnabled = false
             sender.isOn = false
         }else{
             obj.Switch = true
             sender.isOn = true
+            cell.cosmosRatingView.settings.updateOnTouch = true
             cell.mySlider.isEnabled = true
             obj.Slider = Int(value)
         }
@@ -154,25 +157,6 @@ class HomeWorkoutVC: UIViewController {
         
         self.manuView.alpha = 1
 
-//            let camera = UIAction(title: "Camera"){ _ in
-//                print("camera tapped")
-//            }
-//            let camera1 = UIAction(title: "Camera"){ _ in
-//                print("camera tapped")
-//            }
-//            let camera2 = UIAction(title: "Camera"){ _ in
-//                print("camera tapped")
-//            }
-//            let camera3 = UIAction(title: "Camera"){ _ in
-//                print("camera tapped")
-//            }
-//            let photo = UIAction(title: "Photo"){ _ in
-//                print("photo tapped")
-//            }
-//            let menu = UIMenu(title: "OptionList!", children: [camera,camera1,camera2,camera3,photo])
-//            sender.showsMenuAsPrimaryAction = true
-//            sender.menu = menu
-
     }
  
 }
@@ -193,7 +177,9 @@ extension HomeWorkoutVC : UITableViewDataSource, UITableViewDelegate{
         cell.coloreView.backgroundColor = cellObj.arrColors
         cell.btnSwitch.isOn = cellObj.Switch
         cell.mySlider.value = Float(Int(cellObj.Slider))
+        
         cell.cosmosRatingView.rating = cellObj.rating
+        cell.cosmosRatingView.settings.updateOnTouch = cellObj.Switch
         cell.cosmosRatingView.tag = indexPath.row
 
         cell.btnSwitch.tag = indexPath.row
@@ -205,12 +191,18 @@ extension HomeWorkoutVC : UITableViewDataSource, UITableViewDelegate{
         cell.sliderValu.text = "\(Int(cell.mySlider.value))/\(cell.sliderMaxvalue)"
         cell.progressCurrentValue.text = "\(Int(cell.mySlider.value))"
         
+        cell.cosmosRatingView.rating = cellObj.rating
+                cell.cosmosRatingView.didFinishTouchingCosmos = { rating in
+                    self.ArrWorkOut[indexPath.row].rating = rating
+        }
+        
         if cell.btnSwitch.isOn == false{
             cell.mySlider.isEnabled = false
         }else{
             cell.mySlider.isEnabled = true
         }
-        
+       
+                
         return cell
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

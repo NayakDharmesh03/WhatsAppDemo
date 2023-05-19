@@ -79,7 +79,6 @@ class SideManuVC: UIViewController {
     
     @IBAction func logoutBtnClicked(_ sender: UIButton) {
        
-
         let user_defaults = UserDefaults.standard
         user_defaults.removeObject(forKey: "username")
         user_defaults.removeObject(forKey: "password")

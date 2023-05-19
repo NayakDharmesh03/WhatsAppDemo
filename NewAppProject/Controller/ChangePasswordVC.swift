@@ -36,7 +36,7 @@ class ChangePasswordVC: UIViewController {
         newPasswordTF.setBottomBorder(color: "#3EFE46")
     }
     
-    //MARK:- receiving userdata from userdefault
+    //MARK: - receiving userdata from userdefault
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -49,7 +49,7 @@ class ChangePasswordVC: UIViewController {
     }
     
     
-    // MARK:- Update Password Btn Clicked Mathod
+// MARK: - Update Password Btn Clicked Action
     
     @IBAction func updatePasswordBtnClicked(_ sender: UIButton) {
         
@@ -66,11 +66,7 @@ class ChangePasswordVC: UIViewController {
         else if isValidPassword(testStr: oldPasswordTF.text!) ==  false
         {
             self.createAlert(strAlert: "OldPassword must be at least 8 letter")
-        }
-        else if !OldPass{
-            self.createAlert(strAlert: "OldPassword does not match")
-        }
-        else if self.newPasswordTF.text == ""{
+        }else if self.newPasswordTF.text == ""{
             self.createAlert(strAlert: "Please enter NewPassword ")
         }
         else if isValidPassword(testStr: newPasswordTF.text!) ==  false
@@ -78,15 +74,18 @@ class ChangePasswordVC: UIViewController {
             self.createAlert(strAlert: "NewPassword must be at least 8 letter")
         }
         else if self.conformPasswordTF.text == ""{
-            self.createAlert(strAlert: "Please enter conformPassword")
+            self.createAlert(strAlert: "Please enter confirmPassword")
+        }
+        else if !OldPass{
+            self.createAlert(strAlert: "OldPassword does not match")
         }
         else if isValidPassword(testStr: conformPasswordTF.text!) ==  false
         {
-            self.createAlert(strAlert: "ConformPassword must be at least 8 letter")
+            self.createAlert(strAlert: "ConfirmPassword must be at least 8 letter")
         }
         else if newPasswordTF.text! != conformPasswordTF.text!
         {
-            self.createAlert(strAlert: "conformPassword does not match")
+            self.createAlert(strAlert: "confirmPassword does not match")
         }
        else{
             
@@ -103,7 +102,7 @@ class ChangePasswordVC: UIViewController {
                     self.dismiss(animated: true, completion: nil)
                 }
                 else{
-                    self.createAlert(strAlert: "Password not updated")
+                    self.createAlert(strAlert: "Password does not updated")
                 }
                 
                 self.stopLoad(loader: loader)
@@ -115,9 +114,11 @@ class ChangePasswordVC: UIViewController {
     }
     
 }
+
+//MARK: - Maximum Password charactor or data in textfield delegate
+
 extension ChangePasswordVC:UITextFieldDelegate{
     
-    //maximum password charactor or data in textfield delegate
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
 
@@ -131,10 +132,12 @@ extension ChangePasswordVC:UITextFieldDelegate{
             return updateText.count <= 8
     }
 }
-//MARK:- Loader code (Activity indicator)
+
+//MARK: - Loader code (Activity indicator)
 extension ChangePasswordVC{
     
-    
+    //MARK:- Activity Indicator Loading Start
+
     func loader()->UIAlertController{
         let alert = UIAlertController(title: "\t"+""+"Updating New Password", message:"Please wait...", preferredStyle: .alert)
         let indicator = UIActivityIndicatorView(frame: CGRect(x: 5, y: 10, width: 50, height: 50))
@@ -147,7 +150,7 @@ extension ChangePasswordVC{
         
     }
     
-    //MARK:- Activity Indicator Loading stop
+//MARK:- Activity Indicator Loading stop
     
     func stopLoad(loader:UIAlertController) {
         DispatchQueue.main.async {
@@ -157,7 +160,7 @@ extension ChangePasswordVC{
 }
 extension ChangePasswordVC{
     
-    // MARK:- shadow of popup view
+    //Right Corner three dot btn tap popup view manu shadow
     
     func dropShadow() {
         popupVIew.layer.cornerRadius = 30
@@ -175,7 +178,6 @@ extension ChangePasswordVC{
                 getDataFromDefaults { success, id, firstname, lastname, email, password, mobileno,dateofbirth,birthtime,country,state,city,gender,aboutme,imgUrl  in
                     
                             if success == true {
-//                                self.obj.passwordTextField.text = password
                                 self.user_id = id
                             }else {
                                 //No data found

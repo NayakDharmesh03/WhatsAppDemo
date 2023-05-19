@@ -86,13 +86,13 @@ class WhatsAppVC: UIViewController {
         // Set the selected segment text color to white and font size to 20
         segmentControl.setTitleTextAttributes([
             NSAttributedString.Key.foregroundColor: UIColor.white,
-            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20)
+            NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20)
         ], for: .selected)
 
         // Set the unselected segment text color to gray and font size to 20
         segmentControl.setTitleTextAttributes([
             NSAttributedString.Key.foregroundColor: UIColor.gray,
-            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20)
+            NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20)
         ], for: .normal)
     }
     func dropShadow() {

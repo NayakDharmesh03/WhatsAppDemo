@@ -132,9 +132,13 @@ class HomeScreenVC: UIViewController {
 extension HomeScreenVC:UITableViewDataSource,UITableViewDelegate{
     
    
+//MARK: - numberOfRowsInSection DataSource mathod
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ImageArr.count
     }
+
+//MARK: - cellForRowAt DataSource mathod
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableview.dequeueReusableCell(withIdentifier: "cell") as! MyPostTableViewCell
@@ -162,6 +166,7 @@ extension HomeScreenVC:UITableViewDataSource,UITableViewDelegate{
         return cell
     }
     
+    //when we scroll then hiding manu view 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         self.manuView.alpha = 0
     }

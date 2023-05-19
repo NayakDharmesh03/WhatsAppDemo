@@ -42,6 +42,9 @@ class HomeWorkoutTableViewCell: UITableViewCell {
         let image = UIImage(systemName: "circle.fill", withConfiguration: configuration)
         mySlider.setThumbImage(image, for: .normal)
         mySlider.setThumbImage(image, for: .highlighted)
+        // Increase the height
+        let sliderHeight: CGFloat = 8.0
+        mySlider.frame.size.height = sliderHeight
         
         coloreView.layer.cornerRadius = 15
         

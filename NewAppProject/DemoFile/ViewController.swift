@@ -11,10 +11,18 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var segment: UISegmentedControl!
     
+    @IBOutlet weak var customSlider: UISlider!
     override func viewDidLoad() {
         super.viewDidLoad()
   
-        
+        // Increase the height
+                let sliderHeight: CGFloat = 10.0
+                customSlider.frame.size.height = sliderHeight
+                
+                // Adjust the thumb position to align with the increased height
+                let thumbRect = customSlider.thumbRect(forBounds: customSlider.bounds, trackRect: customSlider.trackRect(forBounds: customSlider.bounds), value: customSlider.value)
+                customSlider.frame.origin.y = thumbRect.origin.y + (thumbRect.size.height - sliderHeight)/2
+                
         let fontAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20)]
 
         // Set the font attributes for the normal state

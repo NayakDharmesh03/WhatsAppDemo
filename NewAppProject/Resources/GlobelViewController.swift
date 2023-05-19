@@ -22,14 +22,14 @@ extension UIViewController{
     // MARK:- Globle Alert massage
    @objc func createAlert(strAlert : String)
     {
-        let alert = UIAlertController(title: "Masaage" , message:strAlert, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Message" , message:strAlert, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler:nil))
         self.present(alert, animated: true, completion: nil)
     }
     
     // MARK:- create alert tap on ok then navigate another screen
     @objc func createAlertAndNavigate(strAlert : String){
-        let alert = UIAlertController(title: "Masaage" , message:strAlert, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Message" , message:strAlert, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler:{ (action: UIAlertAction!) in
             self.navigationController?.popViewController(animated: true)
       }))

@@ -45,15 +45,27 @@ class PasswordUpdateVC: UIViewController {
     
     @IBAction func updatePassword(_ sender: UIButton) {
         
-        if newPasswordTF.text == "" || conformPassTF.text == ""
+        if newPasswordTF.text == "" && conformPassTF.text == ""
         {
-            self.createAlert(strAlert: "Please Enter Data")
+            self.createAlert(strAlert: "Please fill all data")
+        }
+        else if self.newPasswordTF.text == ""{
+            self.createAlert(strAlert: "Please enter new password ")
         }
         else if isValidPassword(testStr:newPasswordTF.text!) == false
         {
             self.createAlert(strAlert: "Password must be at least 8 letter")
             
-        }else if newPasswordTF.text! != conformPassTF.text!
+        }
+        else if self.conformPassTF.text == ""{
+            self.createAlert(strAlert: "Please enter confirmpassword ")
+        }
+        else if isValidPassword(testStr:conformPassTF.text!) == false
+        {
+            self.createAlert(strAlert: "Password must be at least 8 letter")
+            
+        }
+        else if newPasswordTF.text! != conformPassTF.text!
         {
             self.createAlert(strAlert: "Password does not match")
         }
@@ -72,7 +84,7 @@ class PasswordUpdateVC: UIViewController {
                     self.removeAanimation()
                 }
                 else{
-                    self.showToast(message: "Password Not Updated...!", font: .systemFont(ofSize: 12.0))
+                    self.showToast(message: "Password does not Updated", font: .systemFont(ofSize: 12.0))
                 }
                 
                 self.stopLoad(loader: loader)
