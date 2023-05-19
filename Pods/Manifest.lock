@@ -1,0 +1,30 @@
+PODS:
+  - Cosmos (23.0.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - IQKeyboardManagerSwift (6.5.10)
+  - SideMenu (6.4.9)
+
+DEPENDENCIES:
+  - Cosmos (~> 23.0)
+  - FMDB
+  - IQKeyboardManagerSwift
+  - SideMenu (~> 6.4.8)
+
+SPEC REPOS:
+  trunk:
+    - Cosmos
+    - FMDB
+    - IQKeyboardManagerSwift
+    - SideMenu
+
+SPEC CHECKSUMS:
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  SideMenu: 8ef57a3cfc024a2d3fc1c036c7fe98537baec9e0
+
+PODFILE CHECKSUM: 1c8cd80d777a80856f0861c8f9a04768273f7f8d
+
+COCOAPODS: 1.12.1
