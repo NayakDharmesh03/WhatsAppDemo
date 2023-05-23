@@ -21,7 +21,12 @@ class MyGalleryVC: UIViewController {
     var categoryArr = ["All Image","Recent","Download","Favourite","Camera"]
     
     var galleryArr : [GalleryData] = []
-    
+     
+    //tapGesture for hinding manu
+    private var tapGesture: UITapGestureRecognizer?
+
+    //creating object of WhatsAppVC
+    var WhatsAppView: WhatsAppVC?
     
 //MARK: - ViewDidLoad()
     
@@ -43,8 +48,24 @@ class MyGalleryVC: UIViewController {
         self.galleryArr.append(Obj4)
         self.galleryArr.append(Obj5)
         
+        
+        
+        //Hiding manuView with tapGesture
+        tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        tapGesture?.cancelsTouchesInView = false
+        view.addGestureRecognizer(tapGesture!)
+
     }
     
+    
+    //Hiding manuView
+    @objc private func handleTap() {
+        // Hide your subview here
+        WhatsAppView?.hideView()
+
+
+    }
+       
     //In bar status color
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent // Change this to .default for black text
@@ -54,7 +75,7 @@ class MyGalleryVC: UIViewController {
 }
 //MARK: - CollectionViewDelegate and  CollectionViewDataSource
 
-extension MyGalleryVC:UICollectionViewDelegate,UICollectionViewDataSource{
+extension MyGalleryVC: UICollectionViewDataSource{
  
 //MARK: - numberOfItemsInSection
 
@@ -79,18 +100,7 @@ extension MyGalleryVC:UICollectionViewDelegate,UICollectionViewDataSource{
     }
     
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "CollectionImageVC") as! CollectionImageVC
-        
-        let obj = self.galleryArr[indexPath.row]
-        
-        //asing array in other galler sliding array
-        nextVC.gallaryImageArr = self.galleryArr[indexPath.row].imageArr
-        nextVC.headerTitle = obj.strTitle
-        self.navigationController?.pushViewController(nextVC, animated: true)
-        
-    }
+ 
     
     //MARK: - For Header title
     
@@ -102,6 +112,40 @@ extension MyGalleryVC:UICollectionViewDelegate,UICollectionViewDataSource{
         return headerView
     }
     
+}
+
+extension MyGalleryVC : UICollectionViewDelegate{
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        WhatsAppView?.hideView()
+        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "CollectionImageVC") as! CollectionImageVC
+        
+        let obj = self.galleryArr[indexPath.row]
+        
+        //asing array in other galler sliding array
+        nextVC.gallaryImageArr = self.galleryArr[indexPath.row].imageArr
+        nextVC.headerTitle = obj.strTitle
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
+    
+    // This is for Hiding manu view code
+    func collectionView(_ collectionView: UICollectionView, shouldBeginMultipleSelectionInteractionAt indexPath: IndexPath) -> Bool {
+        WhatsAppView?.hideView()
+
+          return true
+      }
+      
+      func collectionViewDidEndMultipleSelectionInteraction(_ collectionView: UICollectionView) {
+          WhatsAppView?.hideView()
+
+      }
+    
+    // When scrolling begins in the collection view
+      func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+          WhatsAppView?.hideView()
+      }
 }
 
 //MARK: -  CollectionView FlowLayout

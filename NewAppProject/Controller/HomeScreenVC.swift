@@ -7,7 +7,9 @@
 
 import UIKit
 import SideMenu
-
+protocol hideManu {
+    func hidemanu(manuView:UIView)
+}
 class HomeScreenVC: UIViewController {
     
     @IBOutlet var manuView: UIView! //Manu view for three dot in right top corner
@@ -21,10 +23,13 @@ class HomeScreenVC: UIViewController {
     var arrImages5 = ["pexels3","pexels1","pexels6","pexels5","pexels4","pexels5","pexels6"]
     
     var ImageArr:[HomeCellImage] = []
-        
+    
+    //tapGesture for hiding manuview
+    private var tapGesture: UITapGestureRecognizer?
+
+    var manudelegate : hideManu?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         manuView.alpha = 0
         dropShadow()
         
@@ -45,7 +50,24 @@ class HomeScreenVC: UIViewController {
 
         
         
+        
+        
+        //Hiding manuView with tapGesture
+        tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        tapGesture?.cancelsTouchesInView = false
+        view.addGestureRecognizer(tapGesture!)
+
+      
+        
     }
+    
+    //Hiding manuView
+    @objc private func handleTap() {
+        // Hide your subview here
+        self.manuView.alpha = 0
+
+    }
+
     //Shadow for manu View
     func dropShadow() {
         manuView.layer.masksToBounds = false
@@ -166,7 +188,9 @@ extension HomeScreenVC:UITableViewDataSource,UITableViewDelegate{
         return cell
     }
     
-    //when we scroll then hiding manu view 
+    
+    //------------------------new code for hiding view
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         self.manuView.alpha = 0
     }
@@ -175,12 +199,20 @@ extension HomeScreenVC:UITableViewDataSource,UITableViewDelegate{
         self.manuView.alpha = 0
     }
     
+    func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath) {
+            tapGesture?.isEnabled = false
+    }
+        
+        func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?) {
+            tapGesture?.isEnabled = true
+    }
+    
 
 }
 
 //MARK: - This is for CollectionView UICollectionViewDelegate,UICollectionViewDataSource
 
-extension HomeScreenVC:UICollectionViewDelegate,UICollectionViewDataSource{
+extension HomeScreenVC:UICollectionViewDataSource{
     
     // MARK: - UICollectionViewDataSource
     
@@ -198,8 +230,14 @@ extension HomeScreenVC:UICollectionViewDelegate,UICollectionViewDataSource{
         return cell
     }
     
+
+        
+}
+
 // MARK: - UICollectionViewDelegate
 
+extension HomeScreenVC : UICollectionViewDelegate{
+    
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         guard let cellTbl = self.tableview.cellForRow(at: IndexPath(row: collectionView.tag, section: 0)) as? MyPostTableViewCell else {
             return
@@ -209,6 +247,27 @@ extension HomeScreenVC:UICollectionViewDelegate,UICollectionViewDataSource{
         
     }
     
+    
+    //wiping images with page controll
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+            if let collectionView = scrollView as? UICollectionView,
+               let cellTbl = self.tableview.cellForRow(at: IndexPath(row: collectionView.tag, section: 0)) as? MyPostTableViewCell {
+                
+                let pageWidth = collectionView.bounds.width
+                let currentPage = targetContentOffset.pointee.x / pageWidth
+                
+                if velocity.x > 0 {
+                    // Swiping to the right
+                    cellTbl.pageControl.currentPage = Int(ceil(currentPage))
+                } else if velocity.x < 0 {
+                    // Swiping to the left
+                    cellTbl.pageControl.currentPage = Int(floor(currentPage))
+                } else {
+                    // Not swiping or swiping slowly
+                    cellTbl.pageControl.currentPage = Int(round(currentPage))
+                }
+            }
+        }
 }
 // MARK: - UICollectionViewDelegateFlowLayout
 

@@ -148,6 +148,11 @@ class WhatsAppVC: UIViewController {
 
     
     }
+    
+    func hideView() {
+        self.manuView.alpha = 0
+    }
+
 //    for status bar color
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -198,8 +203,11 @@ class WhatsAppVC: UIViewController {
     @IBAction func segmentControler(_ sender: UISegmentedControl) {
         
         if sender.selectedSegmentIndex == 1{
+            let galleryVC = self.storyboard?.instantiateViewController(withIdentifier: "MyGalleryVC") as! MyGalleryVC
+            galleryVC.WhatsAppView = self
             self.titleLbl.text = "Gallery"
             self.myGalleryViewContainer.alpha = 1
+            
             UIView.animate(withDuration: 0.5, animations: {
                
             })

@@ -41,12 +41,32 @@ class SelectedContactsVC: UIViewController {
     var filteredData = [[String: String]]()
     var isSearching = false
     
+    
+    //tapGesture for manu hiding
+    private var tapGesture: UITapGestureRecognizer?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         countContactsLbl.text = "\(data.count) contacts"
         searchView.isHidden = true
         manuContainerView.alpha = 0
         dropShadow()
+        
+        
+        
+        
+        //Hiding manuView with tapGesture
+        tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        tapGesture?.cancelsTouchesInView = false
+        view.addGestureRecognizer(tapGesture!)
+    
+    }
+    
+    //Hiding manuView
+    @objc private func handleTap() {
+        // Hide your subview here
+        self.manuContainerView.alpha = 0
+
     }
     
     // manuContainerView Shadow
@@ -100,7 +120,7 @@ class SelectedContactsVC: UIViewController {
 
 //MARK: - Search TableViewDelegate and TableViewDataSource
 
-extension SelectedContactsVC:UITableViewDelegate,UITableViewDataSource{
+extension SelectedContactsVC:UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return isSearching ? filteredData.count : data.count
     }
@@ -117,6 +137,10 @@ extension SelectedContactsVC:UITableViewDelegate,UITableViewDataSource{
         return cell
     }
     
+    
+}
+extension SelectedContactsVC : UITableViewDelegate{
+    
     //header view of table
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         
@@ -130,6 +154,23 @@ extension SelectedContactsVC:UITableViewDelegate,UITableViewDataSource{
         
     }
     
+    //------------------------new code for hiding view
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        self.manuContainerView.alpha = 0
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.manuContainerView.alpha = 0
+    }
+    
+    func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath) {
+            tapGesture?.isEnabled = false
+    }
+        
+        func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?) {
+            tapGesture?.isEnabled = true
+    }
 }
 
 //MARK: - SearchBarDelegate for Searching contacts

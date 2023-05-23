@@ -14,10 +14,72 @@
             filePath = "NewAppProject/Controller/ChangePasswordVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "updatePasswordBtnClicked(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A1035DBA-618B-4B2A-B9D9-C3E245928255 - 987ffc97a1383e02"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.ChangePasswordVC.updatePasswordBtnClicked(__C.UIButton) -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/ChangePasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "408">
+               </Location>
+               <Location
+                  uuid = "A1035DBA-618B-4B2A-B9D9-C3E245928255 - 987ffc97a1383e02"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.ChangePasswordVC.updatePasswordBtnClicked(__C.UIButton) -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/ChangePasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "752">
+               </Location>
+               <Location
+                  uuid = "A1035DBA-618B-4B2A-B9D9-C3E245928255 - 987ffc97a1383e2d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.ChangePasswordVC.updatePasswordBtnClicked(__C.UIButton) -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/ChangePasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "408">
+               </Location>
+               <Location
+                  uuid = "A1035DBA-618B-4B2A-B9D9-C3E245928255 - 987ffc97a138390a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.ChangePasswordVC.updatePasswordBtnClicked(__C.UIButton) -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/ChangePasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "408">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -30,10 +92,57 @@
             filePath = "NewAppProject/Controller/ChangePasswordVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "updatePasswordBtnClicked(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2C0615FD-4F63-40D0-8E62-AC62BDC9B81E - 987ffc97a1383b1b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.ChangePasswordVC.updatePasswordBtnClicked(__C.UIButton) -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/ChangePasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "8532">
+               </Location>
+               <Location
+                  uuid = "2C0615FD-4F63-40D0-8E62-AC62BDC9B81E - 987ffc97a1383b1b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.ChangePasswordVC.updatePasswordBtnClicked(__C.UIButton) -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/ChangePasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "8500">
+               </Location>
+               <Location
+                  uuid = "2C0615FD-4F63-40D0-8E62-AC62BDC9B81E - 987ffc97a1383be0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.ChangePasswordVC.updatePasswordBtnClicked(__C.UIButton) -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/ChangePasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "8492">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -441,6 +550,21 @@
                   endingLineNumber = "83"
                   offsetFromSymbolStart = "44">
                </Location>
+               <Location
+                  uuid = "FF556B41-6A88-4524-92F7-EC0122B4E516 - d326cd979248553b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.SideManuVC.logoutBtnClicked(__C.UIButton) -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/SideManuVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "48">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -518,6 +642,21 @@
                   startingLineNumber = "216"
                   endingLineNumber = "216"
                   offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "7A2CCF7E-92A3-4682-8347-D1FA85BB9070 - 591d47af49013d9f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.Login.rememberMeButtonClicked() -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/Login.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "202"
+                  endingLineNumber = "202"
+                  offsetFromSymbolStart = "44">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -597,6 +736,21 @@
                   endingLineNumber = "233"
                   offsetFromSymbolStart = "60">
                </Location>
+               <Location
+                  uuid = "10FC6995-6E09-4E16-961F-EF490E2BEED1 - 251b50d6dba43c27"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.Login.resetDefaults() -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/Login.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "215"
+                  endingLineNumber = "215"
+                  offsetFromSymbolStart = "60">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -644,6 +798,21 @@
                   startingLineNumber = "101"
                   endingLineNumber = "101"
                   offsetFromSymbolStart = "576">
+               </Location>
+               <Location
+                  uuid = "7AC36EBD-FBA5-43CA-B070-6D5E79A22896 - d326cd979248559e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.SideManuVC.logoutBtnClicked(__C.UIButton) -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/SideManuVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "280">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -768,6 +937,51 @@
                   endingLineNumber = "101"
                   offsetFromSymbolStart = "576">
                </Location>
+               <Location
+                  uuid = "728C15E3-EBB8-4DC3-9B32-4F543D941C1F - d326cd979248527d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.SideManuVC.logoutBtnClicked(__C.UIButton) -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/SideManuVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "352">
+               </Location>
+               <Location
+                  uuid = "728C15E3-EBB8-4DC3-9B32-4F543D941C1F - d326cd979248527d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.SideManuVC.logoutBtnClicked(__C.UIButton) -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/SideManuVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "460">
+               </Location>
+               <Location
+                  uuid = "728C15E3-EBB8-4DC3-9B32-4F543D941C1F - d326cd979248527d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.SideManuVC.logoutBtnClicked(__C.UIButton) -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/SideManuVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "780">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -784,6 +998,243 @@
             startingLineNumber = "105"
             endingLineNumber = "105"
             landmarkName = "loginButtonClicked(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C789949-0AE3-446F-89A0-94E84152DA16"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewAppProject/Controller/ChangePasswordVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "textFieldDesign()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8C789949-0AE3-446F-89A0-94E84152DA16 - 36471709250c5439"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.ChangePasswordVC.textFieldDesign() -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/ChangePasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "8C789949-0AE3-446F-89A0-94E84152DA16 - 36471709250c5458"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.ChangePasswordVC.textFieldDesign() -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/ChangePasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "8C789949-0AE3-446F-89A0-94E84152DA16 - 36471709250c5531"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.ChangePasswordVC.textFieldDesign() -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/ChangePasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0844E282-28EF-4302-9F03-776499E2A887"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewAppProject/Controller/ChangePasswordVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "textFieldDesign()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0844E282-28EF-4302-9F03-776499E2A887 - 36471709250c5458"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.ChangePasswordVC.textFieldDesign() -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/ChangePasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "292">
+               </Location>
+               <Location
+                  uuid = "0844E282-28EF-4302-9F03-776499E2A887 - 36471709250c5458"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.ChangePasswordVC.textFieldDesign() -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/ChangePasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "0844E282-28EF-4302-9F03-776499E2A887 - 36471709250c5531"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.ChangePasswordVC.textFieldDesign() -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/ChangePasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56E6D483-6AB2-4D40-A707-98097B05B62E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewAppProject/Controller/ChangePasswordVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "textFieldDesign()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "56E6D483-6AB2-4D40-A707-98097B05B62E - 36471709250c547b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.ChangePasswordVC.textFieldDesign() -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/ChangePasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "500">
+               </Location>
+               <Location
+                  uuid = "56E6D483-6AB2-4D40-A707-98097B05B62E - 36471709250c547b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.ChangePasswordVC.textFieldDesign() -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/ChangePasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  uuid = "56E6D483-6AB2-4D40-A707-98097B05B62E - 36471709250c5550"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.ChangePasswordVC.textFieldDesign() -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/ChangePasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "284">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "09FB6EC4-A208-43F6-A96A-10C98CCBF708"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewAppProject/Controller/WhatsAppVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "hideView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F9E249BD-9B76-4AF7-92A0-7BA2F981297A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewAppProject/Controller/MyGalleryVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "scrollViewWillBeginDragging(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06E0651C-A033-4856-9B4C-F17FDA38A552"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewAppProject/Controller/MyGalleryVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "collectionView(_:shouldBeginMultipleSelectionInteractionAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

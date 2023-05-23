@@ -13,6 +13,8 @@ class HomeWorkoutVC: UIViewController {
     
     @IBOutlet var manuView: UIView! //Manu view for three dot in right top corner
     
+    private var tapGesture: UITapGestureRecognizer?
+
     //color Array for view its change when sliding slider
     let viewcolors = [UIColor.yellow, UIColor.red,UIColor.green, UIColor.blue,UIColor.yellow, UIColor.red,UIColor.green, UIColor.blue,UIColor.green, UIColor.blue]
 
@@ -33,10 +35,22 @@ class HomeWorkoutVC: UIViewController {
         
         createArr()
      
+        
+        
+        //Hiding manuView with tapGesture
+        tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        tapGesture?.cancelsTouchesInView = false
+        view.addGestureRecognizer(tapGesture!)
     
            
     }
  
+    //Hiding manuView
+    @objc private func handleTap() {
+        // Hide your subview here
+        self.manuView.alpha = 0
+
+    }
     
     //Array creating for Table Data
     func createArr(){
@@ -205,6 +219,8 @@ extension HomeWorkoutVC : UITableViewDataSource, UITableViewDelegate{
                 
         return cell
     }
+    //------------------------new code for hiding view
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         self.manuView.alpha = 0
     }
@@ -212,4 +228,14 @@ extension HomeWorkoutVC : UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.manuView.alpha = 0
     }
+    
+    func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath) {
+            tapGesture?.isEnabled = false
+    }
+        
+        func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?) {
+            tapGesture?.isEnabled = true
+    }
+    
+    
 }

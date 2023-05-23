@@ -258,7 +258,7 @@
                                                         <constraint firstAttribute="height" constant="29" id="BdZ-Rf-d85"/>
                                                         <constraint firstAttribute="width" constant="122" id="cR0-va-NUN"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                     <color key="textColor" red="0.018373854459999998" green="0.10841654990000001" blue="0.41905063390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -598,8 +598,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYE-qQ-Oiy">
-                                                    <rect key="frame" x="173.5" y="144" width="67" height="27.5"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                    <rect key="frame" x="174.5" y="144" width="65.5" height="27.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
                                                     <color key="textColor" red="0.02074680664" green="0.095798902209999995" blue="0.43813207749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="heightClass=regular-widthClass=regular">
@@ -1021,8 +1021,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p40-qk-gQq">
-                                                    <rect key="frame" x="173.5" y="141" width="67" height="27.5"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                    <rect key="frame" x="174.5" y="141" width="65.5" height="27.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
                                                     <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1731,7 +1731,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ki-Tf-5LJ">
-                                <rect key="frame" x="20" y="188" width="354" height="520"/>
+                                <rect key="frame" x="30" y="188" width="354" height="520"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pgM-Fv-7je">
                                         <rect key="frame" x="20" y="70" width="314" height="254"/>
@@ -1748,7 +1748,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 </variation>
                                             </label>
-                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lbI-Zh-DFR">
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u3X-QZ-LAf">
                                                 <rect key="frame" x="0.0" y="43" width="314" height="38.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -1756,7 +1756,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 </variation>
                                                 <connections>
-                                                    <outlet property="delegate" destination="s8X-rr-Qs3" id="9iQ-SM-9ue"/>
+                                                    <outlet property="delegate" destination="s8X-rr-Qs3" id="KBG-6e-vKe"/>
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zh3-cX-736">
@@ -1852,11 +1852,13 @@
                         <viewLayoutGuide key="safeArea" id="CvY-Rc-Lu9"/>
                         <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="0.58925513698630139" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9Ki-Tf-5LJ" firstAttribute="leading" secondItem="CvY-Rc-Lu9" secondAttribute="leading" constant="20" id="7jN-Dy-WKp"/>
+                            <constraint firstItem="9Ki-Tf-5LJ" firstAttribute="centerX" secondItem="HzC-WV-m1P" secondAttribute="centerX" id="M92-cH-Lki"/>
                             <constraint firstItem="9Ki-Tf-5LJ" firstAttribute="centerX" secondItem="HzC-WV-m1P" secondAttribute="centerX" id="Qc2-9v-6Yw"/>
-                            <constraint firstItem="CvY-Rc-Lu9" firstAttribute="trailing" secondItem="9Ki-Tf-5LJ" secondAttribute="trailing" constant="20" id="blG-qu-sa6"/>
-                            <constraint firstItem="9Ki-Tf-5LJ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="CvY-Rc-Lu9" secondAttribute="top" constant="10" id="kQX-vL-XVh"/>
-                            <constraint firstItem="CvY-Rc-Lu9" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9Ki-Tf-5LJ" secondAttribute="bottom" constant="10" id="kUZ-Ns-WCR"/>
+                            <constraint firstItem="9Ki-Tf-5LJ" firstAttribute="centerY" secondItem="HzC-WV-m1P" secondAttribute="centerY" id="VHb-yV-MrI"/>
+                            <constraint firstItem="CvY-Rc-Lu9" firstAttribute="trailing" secondItem="9Ki-Tf-5LJ" secondAttribute="trailing" constant="30" id="VTJ-Sj-Kh7"/>
+                            <constraint firstItem="9Ki-Tf-5LJ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="CvY-Rc-Lu9" secondAttribute="top" constant="60" id="kQX-vL-XVh"/>
+                            <constraint firstItem="CvY-Rc-Lu9" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9Ki-Tf-5LJ" secondAttribute="bottom" constant="30" id="kUZ-Ns-WCR"/>
+                            <constraint firstItem="9Ki-Tf-5LJ" firstAttribute="leading" secondItem="CvY-Rc-Lu9" secondAttribute="leading" constant="30" id="leW-ez-EFL"/>
                             <constraint firstItem="9Ki-Tf-5LJ" firstAttribute="centerY" secondItem="HzC-WV-m1P" secondAttribute="centerY" id="y3t-0X-qa6"/>
                         </constraints>
                     </view>
@@ -1864,7 +1866,7 @@
                     <connections>
                         <outlet property="conformPasswordTF" destination="C14-Gg-oVj" id="FM2-XU-lqm"/>
                         <outlet property="newPasswordTF" destination="ExV-ac-qxP" id="HaN-f2-ydQ"/>
-                        <outlet property="oldPasswordTF" destination="lbI-Zh-DFR" id="com-0f-Mih"/>
+                        <outlet property="oldPasswordTF" destination="u3X-QZ-LAf" id="Kvw-kI-clk"/>
                         <outlet property="popupVIew" destination="9Ki-Tf-5LJ" id="E9r-9E-ZLh"/>
                         <outlet property="updatePasswordBtn" destination="bfn-HA-bIU" id="Quw-bA-WpX"/>
                     </connections>
@@ -2003,9 +2005,6 @@
                                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zjF-dO-aeK">
                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="414" id="Nsj-jg-NqD"/>
-                                                            </constraints>
                                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="aJG-vu-0dO">
                                                                 <size key="itemSize" width="414" height="414"/>
                                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -2099,9 +2098,9 @@
                                                             </constraints>
                                                         </imageView>
                                                         <pageControl opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="10" translatesAutoresizingMaskIntoConstraints="NO" id="59a-xX-3bD">
-                                                            <rect key="frame" x="133.5" y="8" width="160" height="26"/>
+                                                            <rect key="frame" x="143.5" y="8" width="140" height="26"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="160" id="5hT-PI-2kJ"/>
+                                                                <constraint firstAttribute="width" constant="140" id="5hT-PI-2kJ"/>
                                                             </constraints>
                                                             <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="currentPageIndicatorTintColor" systemColor="systemBlueColor"/>
@@ -2296,7 +2295,7 @@
                                                     <action selector="searchBackBtnClicked:" destination="hq2-H9-BZj" eventType="touchUpInside" id="PYQ-to-lTW"/>
                                                 </connections>
                                             </button>
-                                            <searchBar contentMode="redraw" placeholder="Type a name or number" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4nA-ZE-XMI">
+                                            <searchBar contentMode="redraw" placeholder="Type a name or number" translatesAutoresizingMaskIntoConstraints="NO" id="4nA-ZE-XMI">
                                                 <rect key="frame" x="50" y="0.0" width="364" height="50"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>

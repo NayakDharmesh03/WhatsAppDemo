@@ -14,23 +14,40 @@ class ViewController: UIViewController {
     @IBOutlet weak var customSlider: UISlider!
     override func viewDidLoad() {
         super.viewDidLoad()
-  
-        // Increase the height
-                let sliderHeight: CGFloat = 10.0
-                customSlider.frame.size.height = sliderHeight
-                
-                // Adjust the thumb position to align with the increased height
-                let thumbRect = customSlider.thumbRect(forBounds: customSlider.bounds, trackRect: customSlider.trackRect(forBounds: customSlider.bounds), value: customSlider.value)
-                customSlider.frame.origin.y = thumbRect.origin.y + (thumbRect.size.height - sliderHeight)/2
-                
-        let fontAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20)]
+        
+        
+    
 
-        // Set the font attributes for the normal state
-        segment.setTitleTextAttributes(fontAttributes, for: .normal)
+        // Usage example
+        let email = "1example@example.co"
+        if isValidEmail(email) {
+            print("Valid email")
+        } else {
+            print("Invalid email")
+        }
+//
+//        // Increase the height
+//                let sliderHeight: CGFloat = 10.0
+//                customSlider.frame.size.height = sliderHeight
+//
+//                // Adjust the thumb position to align with the increased height
+//                let thumbRect = customSlider.thumbRect(forBounds: customSlider.bounds, trackRect: customSlider.trackRect(forBounds: customSlider.bounds), value: customSlider.value)
+//                customSlider.frame.origin.y = thumbRect.origin.y + (thumbRect.size.height - sliderHeight)/2
+//
+//        let fontAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20)]
+//
+//        // Set the font attributes for the normal state
+//        segment.setTitleTextAttributes(fontAttributes, for: .normal)
+//
+//        // Set the font attributes for the selected state if needed
+//        segment.setTitleTextAttributes(fontAttributes, for: .selected)
 
-        // Set the font attributes for the selected state if needed
-        segment.setTitleTextAttributes(fontAttributes, for: .selected)
-
+    }
+    
+    func isValidEmail(_ email: String) -> Bool {
+        let emailRegex = "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
+        return emailPredicate.evaluate(with: email)
     }
 
     @IBAction func btnMenuBarbuttonItemTapped(_ sender: UIBarButtonItem) {

@@ -10,7 +10,8 @@ import UIKit
 class ChangePasswordVC: UIViewController {
 
     @IBOutlet var popupVIew: UIView!
-    @IBOutlet var oldPasswordTF: UITextField!
+    
+    @IBOutlet weak var oldPasswordTF: UITextField!
     @IBOutlet var newPasswordTF: UITextField!
     @IBOutlet var conformPasswordTF: UITextField!
     @IBOutlet var updatePasswordBtn: UIButton!
@@ -23,6 +24,13 @@ class ChangePasswordVC: UIViewController {
         textFieldDesign()
         dropShadow()
         
+        
+        //old password tf underline
+        var bottomLine = CALayer()
+        bottomLine.frame = CGRectMake(0.0, view.frame.height - 1, view.frame.width, 1.0)
+        bottomLine.backgroundColor = UIColor.black.cgColor
+        oldPasswordTF.borderStyle = UITextField.BorderStyle.none
+        oldPasswordTF.layer.addSublayer(bottomLine)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -31,9 +39,10 @@ class ChangePasswordVC: UIViewController {
     }
     func textFieldDesign(){
         
-        oldPasswordTF.setBottomBorder(color: "#3EFE46")
-        conformPasswordTF.setBottomBorder(color: "#3EFE46")
-        newPasswordTF.setBottomBorder(color: "#3EFE46")
+
+        conformPasswordTF.setBottomBorder(color: "#000000")
+        newPasswordTF.setBottomBorder(color: "#000000")
+//        oldPasswordTF.setBottomBorder(color: "#000000")
     }
     
     //MARK: - receiving userdata from userdefault
@@ -130,6 +139,14 @@ extension ChangePasswordVC:UITextFieldDelegate{
             let updateText = currentText.replacingCharacters(in: stringRange, with: string)
             
             return updateText.count <= 8
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        self.popupVIew.alpha = 0
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.popupVIew.alpha = 0
     }
 }
 
