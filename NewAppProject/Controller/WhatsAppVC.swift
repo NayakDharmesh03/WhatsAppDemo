@@ -182,7 +182,26 @@ class WhatsAppVC: UIViewController {
 //MARK: - Show manu Button Action
 
     @IBAction func showmanu(_ sender: UIButton) {
-        self.manuView.alpha = 1
+           
+            let actionButton1 = UIAction(title: "ImageView"){ _ in
+                print("actionButton1 tapped")
+            }
+            let actionButton2 = UIAction(title: "TextView"){ _ in
+                print("actionButton2 tapped")
+            }
+            let actionButton3 = UIAction(title: "UILabel"){ _ in
+                print("actionButton3 tapped")
+            }
+            let actionButton4 = UIAction(title: "TableView"){ _ in
+                print("actionButton4 tapped")
+            }
+            let actionButton5 = UIAction(title: "UIButton"){ _ in
+                print("actionButton5 tapped")
+            }
+            let menu = UIMenu(title: "OptionList!", children: [actionButton1,actionButton2,actionButton3,actionButton4,actionButton5])
+            sender.showsMenuAsPrimaryAction = true
+            sender.menu = menu
+            
     }
     @IBAction func showSideBar(_ sender: Any) {
       

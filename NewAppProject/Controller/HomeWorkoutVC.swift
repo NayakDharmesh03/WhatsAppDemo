@@ -13,7 +13,6 @@ class HomeWorkoutVC: UIViewController {
     
     @IBOutlet var manuView: UIView! //Manu view for three dot in right top corner
     
-    private var tapGesture: UITapGestureRecognizer?
 
     //color Array for view its change when sliding slider
     let viewcolors = [UIColor.yellow, UIColor.red,UIColor.green, UIColor.blue,UIColor.yellow, UIColor.red,UIColor.green, UIColor.blue,UIColor.green, UIColor.blue]
@@ -34,24 +33,9 @@ class HomeWorkoutVC: UIViewController {
         self.manuView.alpha = 0
         
         createArr()
-     
-        
-        
-        //Hiding manuView with tapGesture
-        tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
-        tapGesture?.cancelsTouchesInView = false
-        view.addGestureRecognizer(tapGesture!)
-    
            
     }
- 
-    //Hiding manuView
-    @objc private func handleTap() {
-        // Hide your subview here
-        self.manuView.alpha = 0
 
-    }
-    
     //Array creating for Table Data
     func createArr(){
         
@@ -158,18 +142,40 @@ class HomeWorkoutVC: UIViewController {
         
 
     }
-    
-    //If user touches anywhere then manu hide
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesEnded(touches, with: event)
-        self.manuView.alpha = 0
-    }
-    
+//    
+//    //If user touches anywhere then manu hide
+//    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        super.touchesEnded(touches, with: event)
+//        self.manuView.alpha = 0
+//    }
+//
     
     //Manu Action for right corner three dot
     @IBAction func showMnau(_ sender: UIButton) {
         
-        self.manuView.alpha = 1
+//        self.manuView.alpha = 1
+        
+         let actionButton1 = UIAction(title: "ImageView"){ _ in
+             print("actionButton1 tapped")
+         }
+         let actionButton2 = UIAction(title: "TextView"){ _ in
+             print("actionButton2 tapped")
+         }
+         let actionButton3 = UIAction(title: "Slider"){ _ in
+             print("actionButton3 tapped")
+         }
+         let actionButton4 = UIAction(title: "TableView"){ _ in
+             print("actionButton4 tapped")
+         }
+         let actionButton5 = UIAction(title: "UIButton"){ _ in
+             print("actionButton5 tapped")
+         }
+        let actionButton6 = UIAction(title: "RattingBar"){ _ in
+            print("actionButton5 tapped")
+        }
+         let menu = UIMenu(title: "OptionList!", children: [actionButton1,actionButton2,actionButton3,actionButton4,actionButton5,actionButton6])
+         sender.showsMenuAsPrimaryAction = true
+         sender.menu = menu
 
     }
  
@@ -218,23 +224,6 @@ extension HomeWorkoutVC : UITableViewDataSource, UITableViewDelegate{
        
                 
         return cell
-    }
-    //------------------------new code for hiding view
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        self.manuView.alpha = 0
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.manuView.alpha = 0
-    }
-    
-    func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath) {
-            tapGesture?.isEnabled = false
-    }
-        
-        func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?) {
-            tapGesture?.isEnabled = true
     }
     
     

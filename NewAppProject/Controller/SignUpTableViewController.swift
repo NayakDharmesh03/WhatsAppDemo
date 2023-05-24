@@ -165,11 +165,11 @@ class SignUpTableViewController: UITableViewController{
         let imgSystem = UIImage(systemName: "person.crop.circle")
         
         if profileImage.image?.pngData() == imgSystem?.pngData() && firstnameTextFied.text == "" && lastnameTextFied.text == "" && mobileTextFied.text == "" && dobTF.text == "" && birthTimeTF.text == "" && countryTF.text == "" && stateTF.text == "" && cityTF.text == ""{
-            self.createAlert(strAlert: "Please fill All Data")
+            self.createAlert(strAlert: "Please enter All Data")
             
         }
         else if profileImage.image?.pngData() == imgSystem?.pngData(){
-            self.createAlert(strAlert: "Please set Profile image")
+            self.createAlert(strAlert: "Please set profile image")
         }
         else if(firstnameTextFied.text == ""){
             self.createAlert(strAlert: "Please enter firstname")

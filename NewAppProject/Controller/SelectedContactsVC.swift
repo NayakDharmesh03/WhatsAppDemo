@@ -41,44 +41,17 @@ class SelectedContactsVC: UIViewController {
     var filteredData = [[String: String]]()
     var isSearching = false
     
-    
-    //tapGesture for manu hiding
-    private var tapGesture: UITapGestureRecognizer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         countContactsLbl.text = "\(data.count) contacts"
         searchView.isHidden = true
         manuContainerView.alpha = 0
-        dropShadow()
         
-        
-        
-        
-        //Hiding manuView with tapGesture
-        tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
-        tapGesture?.cancelsTouchesInView = false
-        view.addGestureRecognizer(tapGesture!)
     
     }
-    
-    //Hiding manuView
-    @objc private func handleTap() {
-        // Hide your subview here
-        self.manuContainerView.alpha = 0
 
-    }
-    
-    // manuContainerView Shadow
-    func dropShadow() {
-        manuContainerView.layer.masksToBounds = false
-        manuContainerView.layer.shadowColor = UIColor.black.cgColor
-        manuContainerView.layer.shadowOpacity = 0.5
-        manuContainerView.layer.shadowOffset = .zero
-        manuContainerView.layer.shadowRadius = 5
-        manuContainerView.layer.shouldRasterize = true
-        
-    }
+
     
     // when we touches anywhere then three dot manu hiding
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -108,7 +81,29 @@ class SelectedContactsVC: UIViewController {
     
     //Right top corner three dot manu Action hide & show
     @IBAction func manuShow(_ sender: UIButton) {
-        manuContainerView.alpha = 1
+//        manuContainerView.alpha = 1
+        
+         let actionButton1 = UIAction(title: "ImageView"){ _ in
+             print("actionButton1 tapped")
+         }
+         let actionButton2 = UIAction(title: "TextView"){ _ in
+             print("actionButton2 tapped")
+         }
+         let actionButton3 = UIAction(title: "UILabel"){ _ in
+             print("actionButton3 tapped")
+         }
+         let actionButton4 = UIAction(title: "TableView"){ _ in
+             print("actionButton4 tapped")
+         }
+         let actionButton5 = UIAction(title: "UIButton"){ _ in
+             print("actionButton5 tapped")
+         }
+        let actionButton6 = UIAction(title: "SearchBar"){ _ in
+            print("actionButton5 tapped")
+        }
+         let menu = UIMenu(title: "OptionList!", children: [actionButton1,actionButton2,actionButton3,actionButton4,actionButton5,actionButton6])
+         sender.showsMenuAsPrimaryAction = true
+         sender.menu = menu
     }
     
     //Search button icon Click Action
@@ -154,23 +149,6 @@ extension SelectedContactsVC : UITableViewDelegate{
         
     }
     
-    //------------------------new code for hiding view
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        self.manuContainerView.alpha = 0
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.manuContainerView.alpha = 0
-    }
-    
-    func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath) {
-            tapGesture?.isEnabled = false
-    }
-        
-        func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?) {
-            tapGesture?.isEnabled = true
-    }
 }
 
 //MARK: - SearchBarDelegate for Searching contacts

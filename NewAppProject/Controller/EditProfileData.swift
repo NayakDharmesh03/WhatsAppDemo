@@ -210,7 +210,7 @@ class EditProfileData: UITableViewController {
             
         }
         else if(firstnameTextField.text == ""){
-            self.createAlert(strAlert: "Please enter name first")
+            self.createAlert(strAlert: "Please enter firstname")
             
         }else if(lastnameTextFileld.text == ""){
             self.createAlert(strAlert: "Please enter lastname")
@@ -220,7 +220,7 @@ class EditProfileData: UITableViewController {
             self.createAlert(strAlert: "Please enter mobile number")
             
         }else if isValidPhone(testStr: mobileNoTextField.text!) == false{
-            self.createAlert(strAlert: "Please Enter Valid phone")
+            self.createAlert(strAlert: "Please enter valid phone")
             
         }
         else if dobTF.text == ""{

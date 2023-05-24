@@ -7,6 +7,20 @@
 
 import UIKit
 
+//extension UITextField {
+//
+//    func setBottomBorder2(color:String) {
+//        self.borderStyle = UITextField.BorderStyle.none
+//        let border = CALayer()
+//        let width = CGFloat(1.0)
+//        border.borderColor = UIColor(named: color)?.cgColor
+//        border.frame = CGRect(x: 0, y: self.frame.size.height - width,   width:  self.frame.size.width*3, height: self.frame.size.height)
+//        border.borderWidth = width
+//        self.layer.addSublayer(border)
+//        self.layer.masksToBounds = true
+//    }
+//}
+
 class ChangePasswordVC: UIViewController {
 
     @IBOutlet var popupVIew: UIView!
@@ -19,18 +33,16 @@ class ChangePasswordVC: UIViewController {
     var user_id = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        conformPasswordTF.underline()
+//        newPasswordTF.underline()
+//        oldPasswordTF.underline()
+        
         popupVIew.alpha = 0
         updatePasswordBtn.layer.cornerRadius = 20
         textFieldDesign()
         dropShadow()
-        
-        
-        //old password tf underline
-        var bottomLine = CALayer()
-        bottomLine.frame = CGRectMake(0.0, view.frame.height - 1, view.frame.width, 1.0)
-        bottomLine.backgroundColor = UIColor.black.cgColor
-        oldPasswordTF.borderStyle = UITextField.BorderStyle.none
-        oldPasswordTF.layer.addSublayer(bottomLine)
+    
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -38,11 +50,9 @@ class ChangePasswordVC: UIViewController {
         popupVIew.alpha = 1
     }
     func textFieldDesign(){
-        
-
-        conformPasswordTF.setBottomBorder(color: "#000000")
-        newPasswordTF.setBottomBorder(color: "#000000")
-//        oldPasswordTF.setBottomBorder(color: "#000000")
+        oldPasswordTF.setBottomBorder(color: "#3EFE46")
+        newPasswordTF.setBottomBorder(color: "#3EFE46")
+        conformPasswordTF.setBottomBorder(color: "#3EFE46")
     }
     
     //MARK: - receiving userdata from userdefault
@@ -175,6 +185,19 @@ extension ChangePasswordVC{
         }
     }
 }
+
+extension UITextField{
+    func underline(){
+            let border = CALayer()
+            let width = CGFloat(1.0)
+            border.borderColor = UIColor.black.cgColor
+            border.frame = CGRect(x: 0, y: self.frame.size.height - width, width:  self.frame.size.width, height: self.frame.size.height)
+            border.borderWidth = width
+            self.layer.addSublayer(border)
+            self.layer.masksToBounds = true
+        }
+}
+
 extension ChangePasswordVC{
     
     //Right Corner three dot btn tap popup view manu shadow

@@ -13,9 +13,10 @@ class MyGalleryVC: UIViewController {
     
     var cameraImageArr = ["pexels1","pexels2","pexels3","pexels4","pexels5"]
     var recentImageArr = ["pexels3","pexels1","pexels6","pexels5"]
-    var downloadImageArr = ["pexels4","pexels5","pexels6","pexels1","pexels2","pexels3"]
+    var downloadImageArr = ["pexels4","pexels5","pexels3"]
     var favouriteImageArr = ["pexels6","pexels1","pexels2","pexels3","pexels1","pexels2"]
-    
+    var Myself = ["pexels5","pexels3","pexels2"]
+
     var allImageArr = ["pexels1","pexels2","pexels3","pexels4","pexels5","pexels3","pexels1","pexels6","pexels5","pexels4","pexels5","pexels6"]
     
     var categoryArr = ["All Image","Recent","Download","Favourite","Camera"]
@@ -40,15 +41,17 @@ class MyGalleryVC: UIViewController {
         let Obj3 = GalleryData(strTitle: "Camera", images: cameraImageArr)
         let Obj4 = GalleryData(strTitle: "Download", images: downloadImageArr)
         let Obj5 = GalleryData(strTitle: "Favourite", images: favouriteImageArr)
-        
+        let Obj6 = GalleryData(strTitle: "Myself", images: Myself)
+
         //Appending objects of GalleryArr
         self.galleryArr.append(Obj1)
         self.galleryArr.append(Obj2)
         self.galleryArr.append(Obj3)
         self.galleryArr.append(Obj4)
         self.galleryArr.append(Obj5)
-        
-        
+        self.galleryArr.append(Obj6)
+
+
         
         //Hiding manuView with tapGesture
         tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
@@ -131,6 +134,9 @@ extension MyGalleryVC : UICollectionViewDelegate{
     
     
     // This is for Hiding manu view code
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        WhatsAppView?.hideView()
+    }
     func collectionView(_ collectionView: UICollectionView, shouldBeginMultipleSelectionInteractionAt indexPath: IndexPath) -> Bool {
         WhatsAppView?.hideView()
 

@@ -29,7 +29,8 @@ class MyPostTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-       
+        pageControl.transform = CGAffineTransform(scaleX: 0.7, y: 0.7)
+
         userProfileImg.layer.cornerRadius = userProfileImg.frame.height/2
         
     }

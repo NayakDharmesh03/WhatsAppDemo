@@ -102,14 +102,14 @@ class Login: UIViewController{
         
         if self.emailTextField.text?.lowercased() == "" && self.passwordTextField.text!==""
         {
-            self.createAlert(strAlert: "Please fill email and password")
+            self.createAlert(strAlert: "Please enter email and password")
         }
         else if self.emailTextField.text == ""{
             self.createAlert(strAlert: "Please enter email ")
         }
         else if isValidEmail(testStr: emailTextField.text!) ==  false
         {
-            self.createAlert(strAlert: "Please Enter Valid email")
+            self.createAlert(strAlert: "Please enter valid email")
         }else if passwordTextField.text == ""{
             self.createAlert(strAlert: "Please enter password")
         }
@@ -202,13 +202,12 @@ extension Login{
          let user_Defaults = UserDefaults.standard
 
              if user_Defaults.bool(forKey: "rememberMe") {
+
              let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
              let homeVC = self.storyboard?.instantiateViewController(identifier: "TabBarControl") as! TabBarControl
              self.navigationController?.pushViewController(homeVC, animated: true)
-
          }
-        
     }
     
     func resetDefaults() {
@@ -229,19 +228,19 @@ extension Login {
     
     func varifyEmail(){
         
-        let alerBox = UIAlertController(title: "Varify email it's you", message: "", preferredStyle: .alert)
-        let update = UIAlertAction(title: "Varify", style: .default) { [self] (action) in
+        let alerBox = UIAlertController(title: "Verify email it's you", message: "", preferredStyle: .alert)
+        let update = UIAlertAction(title: "Verify", style: .default) { [self] (action) in
             
             if self.emailTf!.text == ""
             {
-                self.createAlert(strAlert: "Please fill email")
+                self.createAlert(strAlert: "Please enter email")
             }
             else if self.emailTf.text == ""{
                 self.createAlert(strAlert: "Please enter email ")
             }
             else if isValidEmail(testStr: (emailTf?.text!)! ) ==  false
             {
-                self.createAlert(strAlert: "Please Enter Valid email")
+                self.createAlert(strAlert: "Please enter valid email")
             }
             else
             {
@@ -252,8 +251,6 @@ extension Login {
                     
                     if result
                     {
-                        
-                        print("GO next VC")
                         
                         //                        let story = UIStoryboard(name: "Main", bundle: nil)
                         let nextVC = self.storyboard?.instantiateViewController(identifier: "PasswordUpdateVC") as! PasswordUpdateVC

@@ -17,9 +17,9 @@ class HomeScreenVC: UIViewController {
     @IBOutlet weak var tableview: UITableView!
     
     var arrImages1 = ["pexels1","pexels2","pexels3","pexels4","pexels5"]
-    var arrImages2 = ["pexels3","Meera","pexels1","pexels6","pexels5"]
+    var arrImages2 = ["pexels3","pexels1","pexels6","pexels5"]
     var arrImages3 = ["pexels4","pexels5","pexels6","pexels1","pexels2","pexels3"]
-    var arrImages4 = ["pexels6","pexels1","pexels2","pexels3","pexels1","pexels2"]
+    var arrImages4 = ["pexels6","pexels1","pexels2"]
     var arrImages5 = ["pexels3","pexels1","pexels6","pexels5","pexels4","pexels5","pexels6"]
     
     var ImageArr:[HomeCellImage] = []
@@ -30,6 +30,8 @@ class HomeScreenVC: UIViewController {
     var manudelegate : hideManu?
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
         manuView.alpha = 0
         dropShadow()
         
@@ -49,16 +51,10 @@ class HomeScreenVC: UIViewController {
         self.ImageArr.append(obj5)
 
         
-        
-        
-        
         //Hiding manuView with tapGesture
         tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         tapGesture?.cancelsTouchesInView = false
         view.addGestureRecognizer(tapGesture!)
-
-      
-        
     }
     
     //Hiding manuView
@@ -80,8 +76,30 @@ class HomeScreenVC: UIViewController {
     }
     
     //Show manu View Action
-    @IBAction func showMnau(_ sender: Any) {
-        self.manuView.alpha = 1
+    @IBAction func showMnau(_ sender: UIButton) {
+        
+         let actionButton1 = UIAction(title: "ImageView"){ _ in
+             print("actionButton1 tapped")
+         }
+         let actionButton2 = UIAction(title: "TextView"){ _ in
+             print("actionButton2 tapped")
+         }
+         let actionButton3 = UIAction(title: "UILabel"){ _ in
+             print("actionButton3 tapped")
+         }
+         let actionButton4 = UIAction(title: "TableView"){ _ in
+             print("actionButton4 tapped")
+         }
+         let actionButton5 = UIAction(title: "SideBar"){ _ in
+             print("actionButton5 tapped")
+         }
+        let actionButton6 = UIAction(title: "PageControl"){ _ in
+            print("actionButton6 tapped")
+        }
+         let menu = UIMenu(title: "OptionList!", children: [actionButton1,actionButton2,actionButton3,actionButton4,actionButton5,actionButton6])
+         sender.showsMenuAsPrimaryAction = true
+         sender.menu = menu
+//        self.manuView.alpha = 1
         
     }
     
@@ -149,7 +167,7 @@ class HomeScreenVC: UIViewController {
     }
 }
 
-//MARK:- Home screen UITableViewDataSource and UITableViewDelegate
+//MARK: - Home screen UITableViewDataSource and UITableViewDelegate
 
 extension HomeScreenVC:UITableViewDataSource,UITableViewDelegate{
     
@@ -184,10 +202,8 @@ extension HomeScreenVC:UITableViewDataSource,UITableViewDelegate{
 //        tableview.reloadRows(at: [indexPath], with: .none)
 //        tableview.deleteRows(at: [indexPath], with: .automatic)
 
-        
         return cell
     }
-    
     
     //------------------------new code for hiding view
     
@@ -229,9 +245,7 @@ extension HomeScreenVC:UICollectionViewDataSource{
         
         return cell
     }
-    
 
-        
 }
 
 // MARK: - UICollectionViewDelegate
@@ -246,7 +260,6 @@ extension HomeScreenVC : UICollectionViewDelegate{
         cellTbl.pageControl.currentPage = indexPath.item
         
     }
-    
     
     //wiping images with page controll
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
