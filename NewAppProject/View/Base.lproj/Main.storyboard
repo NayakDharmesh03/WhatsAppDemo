@@ -13,7 +13,7 @@
         <!--Login-->
         <scene sceneID="gTp-YQ-YXi">
             <objects>
-                <viewController id="QKD-A2-28x" customClass="Login" customModule="NewAppProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="QKD-A2-28x" customClass="Login" customModule="NewAppProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="npT-B1-0Zr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2559,6 +2559,184 @@
             </objects>
             <point key="canvasLocation" x="4067" y="1079"/>
         </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="SCO-kp-i90">
+            <objects>
+                <viewController id="juF-aE-YzB" customClass="SplashViewController" customModule="NewAppProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zP5-2l-azr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="31c-bO-0ef">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="312" id="OWa-W4-4bT" customClass="newTableViewCell" customModule="NewAppProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="312"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OWa-W4-4bT" id="hzU-Op-V9D">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="312"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bdp-ih-MN0">
+                                                    <rect key="frame" x="10" y="10" width="394" height="292"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Aryabhai" translatesAutoresizingMaskIntoConstraints="NO" id="4rp-bY-S1n">
+                                                            <rect key="frame" x="8" y="10" width="197" height="272"/>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ksd-xa-xqR">
+                                                            <rect key="frame" x="215" y="10" width="171" height="272"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="O6B-P4-pxc">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="171" height="85"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zB6-ZU-uNH">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="171" height="42.5"/>
+                                                                            <string key="text">Ram Charan
+Indian actor</string>
+                                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DaK-1y-ul0">
+                                                                            <rect key="frame" x="0.0" y="42.5" width="171" height="42.5"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agy-hk-woG">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="85.5" height="42.5"/>
+                                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ie-aZ-Ygh">
+                                                                                    <rect key="frame" x="85.5" y="0.0" width="85.5" height="42.5"/>
+                                                                                    <state key="normal" title="Button"/>
+                                                                                    <buttonConfiguration key="configuration" style="plain" image="star.fill" catalog="system" title="4.2">
+                                                                                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17"/>
+                                                                                    </buttonConfiguration>
+                                                                                </button>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzn-tq-krF">
+                                                                    <rect key="frame" x="0.0" y="85" width="171" height="152.5"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsf-KO-XE5">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="171" height="152.5"/>
+                                                                            <string key="text">Konidela Ram Charan is an Indian actor, producer, and entrepreneur who primarily works in Telugu films. One of the highest-paid actors in Indian cinema, he is the recipient of three Filmfare Awards and two Nandi Awards. Since 2013, he has featured in Forbes India's Celebrity 100 list.</string>
+                                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cZU-r0-FlC">
+                                                                    <rect key="frame" x="0.0" y="237.5" width="171" height="34.5"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvj-iG-EAa">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="85.5" height="34.5"/>
+                                                                            <string key="text"> Actor
+</string>
+                                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9Z-i2-hQD">
+                                                                            <rect key="frame" x="85.5" y="0.0" width="85.5" height="34.5"/>
+                                                                            <state key="normal" title="Button"/>
+                                                                            <buttonConfiguration key="configuration" style="plain" title="Buy" cornerStyle="capsule">
+                                                                                <backgroundConfiguration key="background">
+                                                                                    <color key="backgroundColor" red="0.40784313729999999" green="0.3921568627" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </backgroundConfiguration>
+                                                                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </buttonConfiguration>
+                                                                        </button>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="ksd-xa-xqR" secondAttribute="trailing" constant="8" id="0yr-ra-Al0"/>
+                                                        <constraint firstItem="4rp-bY-S1n" firstAttribute="leading" secondItem="Bdp-ih-MN0" secondAttribute="leading" constant="8" id="8vT-gl-fSv"/>
+                                                        <constraint firstItem="ksd-xa-xqR" firstAttribute="leading" secondItem="4rp-bY-S1n" secondAttribute="trailing" constant="10" id="gC7-Ih-MV4"/>
+                                                        <constraint firstItem="4rp-bY-S1n" firstAttribute="width" secondItem="Bdp-ih-MN0" secondAttribute="width" multiplier="0.5" id="gJj-QG-ewE"/>
+                                                        <constraint firstAttribute="bottom" secondItem="4rp-bY-S1n" secondAttribute="bottom" constant="10" id="gdp-8k-gNu"/>
+                                                        <constraint firstItem="4rp-bY-S1n" firstAttribute="top" secondItem="Bdp-ih-MN0" secondAttribute="top" constant="10" id="iHN-xY-U8h"/>
+                                                        <constraint firstItem="ksd-xa-xqR" firstAttribute="top" secondItem="Bdp-ih-MN0" secondAttribute="top" constant="10" id="lnI-h4-uX8"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ksd-xa-xqR" secondAttribute="bottom" constant="10" id="pUi-BX-2Hk"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Bdp-ih-MN0" firstAttribute="top" secondItem="hzU-Op-V9D" secondAttribute="top" constant="10" id="I3e-dG-ChR"/>
+                                                <constraint firstAttribute="trailing" secondItem="Bdp-ih-MN0" secondAttribute="trailing" constant="10" id="Nx3-NZ-gED"/>
+                                                <constraint firstItem="Bdp-ih-MN0" firstAttribute="leading" secondItem="hzU-Op-V9D" secondAttribute="leading" constant="10" id="b2B-rn-zZI"/>
+                                                <constraint firstAttribute="bottom" secondItem="Bdp-ih-MN0" secondAttribute="bottom" constant="10" id="mUT-H0-BAp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="actorImage" destination="4rp-bY-S1n" id="jAo-Jb-xLW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="juF-aE-YzB" id="hRI-Dw-2DT"/>
+                                    <outlet property="delegate" destination="juF-aE-YzB" id="MDf-5N-jwv"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hfu-Un-JCE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hfu-Un-JCE" firstAttribute="bottom" secondItem="31c-bO-0ef" secondAttribute="bottom" id="Scf-lj-xCo"/>
+                            <constraint firstItem="Hfu-Un-JCE" firstAttribute="trailing" secondItem="31c-bO-0ef" secondAttribute="trailing" id="XU5-Xq-n2Y"/>
+                            <constraint firstItem="31c-bO-0ef" firstAttribute="top" secondItem="Hfu-Un-JCE" secondAttribute="top" id="mBV-dh-sU6"/>
+                            <constraint firstItem="31c-bO-0ef" firstAttribute="leading" secondItem="Hfu-Un-JCE" secondAttribute="leading" id="pzc-Ez-VzW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myTable" destination="31c-bO-0ef" id="KeD-YZ-1Oe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v5h-UH-pjF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2810.144927536232" y="433.92857142857139"/>
+        </scene>
+        <!--Splash ScreenVC-->
+        <scene sceneID="G99-Uf-MPd">
+            <objects>
+                <viewController storyboardIdentifier="SplashScreenVC" id="FXe-lO-CTJ" customClass="SplashScreenVC" customModule="NewAppProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GCe-Aw-unt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoImg" translatesAutoresizingMaskIntoConstraints="NO" id="jed-9l-9XK">
+                                <rect key="frame" x="0.0" y="298" width="414" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Cm7-DZ-CyP"/>
+                                    <constraint firstAttribute="width" constant="414" id="oB2-ge-wgi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tov-Pk-Nvi"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="jed-9l-9XK" firstAttribute="centerY" secondItem="GCe-Aw-unt" secondAttribute="centerY" id="nbD-cQ-LB8"/>
+                            <constraint firstItem="jed-9l-9XK" firstAttribute="centerX" secondItem="GCe-Aw-unt" secondAttribute="centerX" id="sPJ-vX-OH2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eUb-rE-dr5"/>
+                    <connections>
+                        <outlet property="swiftLogoImg" destination="jed-9l-9XK" id="X6b-ft-VrV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LHz-nJ-c4D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1328.985507246377" y="1078.7946428571429"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="bK9-Rh-0Ue">
             <objects>
@@ -2569,7 +2747,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="QKD-A2-28x" kind="relationship" relationship="rootViewController" id="9Bs-nP-GEt"/>
+                        <segue destination="FXe-lO-CTJ" kind="relationship" relationship="rootViewController" id="p3l-ZX-NDM"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HLy-sM-F9T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3857,6 +4035,7 @@
     </designables>
     <resources>
         <image name="Add" width="31" height="30"/>
+        <image name="Aryabhai" width="1447" height="1885"/>
         <image name="Back (2)" width="34" height="36"/>
         <image name="Camera-1" width="23" height="19"/>
         <image name="Frame" width="6" height="29"/>
@@ -3881,6 +4060,7 @@
         <image name="heart (1)" width="512" height="512"/>
         <image name="info" width="22" height="22"/>
         <image name="likeBtn" width="34" height="27"/>
+        <image name="logoImg" width="663" height="182"/>
         <image name="maleProfile" width="150" height="150"/>
         <image name="manu" width="6" height="29"/>
         <image name="openList" width="12" height="6"/>
@@ -3891,6 +4071,7 @@
         <image name="sideManu" width="26" height="20"/>
         <image name="star" width="512" height="512"/>
         <image name="star (1)" width="512" height="512"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="tabicon" width="31" height="31"/>
         <image name="vidioCall" width="20" height="14"/>
         <image name="whatsappIcon" width="30" height="30"/>

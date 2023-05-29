@@ -64,6 +64,21 @@
                   endingLineNumber = "88"
                   offsetFromSymbolStart = "8492">
                </Location>
+               <Location
+                  uuid = "2C0615FD-4F63-40D0-8E62-AC62BDC9B81E - 987ffc97a138352a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.ChangePasswordVC.updatePasswordBtnClicked(__C.UIButton) -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/ChangePasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "8504">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -673,6 +688,21 @@
                   endingLineNumber = "215"
                   offsetFromSymbolStart = "60">
                </Location>
+               <Location
+                  uuid = "10FC6995-6E09-4E16-961F-EF490E2BEED1 - 251b50d6dba43c78"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.Login.resetDefaults() -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/Login.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "214"
+                  endingLineNumber = "214"
+                  offsetFromSymbolStart = "60">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -983,6 +1013,21 @@
                   endingLineNumber = "43"
                   offsetFromSymbolStart = "68">
                </Location>
+               <Location
+                  uuid = "0844E282-28EF-4302-9F03-776499E2A887 - 36471709250c56ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.ChangePasswordVC.textFieldDesign() -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/ChangePasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "504">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -1045,6 +1090,21 @@
                   startingLineNumber = "44"
                   endingLineNumber = "44"
                   offsetFromSymbolStart = "284">
+               </Location>
+               <Location
+                  uuid = "56E6D483-6AB2-4D40-A707-98097B05B62E - 36471709250c56cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewAppProject.ChangePasswordVC.textFieldDesign() -&gt; ()"
+                  moduleName = "NewAppProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookair_32/Desktop/Dharmesh/WhatsAppDemo/NewAppProject/Controller/ChangePasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "696">
                </Location>
             </Locations>
          </BreakpointContent>

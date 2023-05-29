@@ -57,6 +57,8 @@
 		52F8A98B29E962DB00826524 /* HeaderTitleReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8A98A29E962DB00826524 /* HeaderTitleReusableView.swift */; };
 		77EE976A74437B57B7484D0E /* Pods_NewAppProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D41A02ECE07493A42BB3E81 /* Pods_NewAppProject.framework */; };
 		C11DE90833206CABE37E7134 /* Pods_NewAppProject_NewAppProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A77EED971A5C531052F8A3 /* Pods_NewAppProject_NewAppProjectUITests.framework */; };
+		E31B68B82A24CB6400D20D2B /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31B68B72A24CB6400D20D2B /* SplashScreenVC.swift */; };
+		E3ED37582A1E3C8000D7F230 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED37572A1E3C8000D7F230 /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +140,8 @@
 		B5A77EED971A5C531052F8A3 /* Pods_NewAppProject_NewAppProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewAppProject_NewAppProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E196B8FDE98774C62F9266 /* Pods-NewAppProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewAppProject.release.xcconfig"; path = "Target Support Files/Pods-NewAppProject/Pods-NewAppProject.release.xcconfig"; sourceTree = "<group>"; };
 		E0DE2E74739B0CEE2F99EDE1 /* Pods-NewAppProject-NewAppProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewAppProject-NewAppProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-NewAppProject-NewAppProjectUITests/Pods-NewAppProject-NewAppProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E31B68B72A24CB6400D20D2B /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
+		E3ED37572A1E3C8000D7F230 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		E7FF3D9CCC4F8D10174A9A80 /* Pods-NewAppProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewAppProjectTests.release.xcconfig"; path = "Target Support Files/Pods-NewAppProjectTests/Pods-NewAppProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -248,6 +252,7 @@
 		09ACB88929CD7748001DCA27 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E31B68B72A24CB6400D20D2B /* SplashScreenVC.swift */,
 				09ACB87C29CD759C001DCA27 /* GlobelViewController.swift */,
 				091FFA2929B75E8B0029C5BF /* SceneDelegate.swift */,
 				091FFA2729B75E8A0029C5BF /* AppDelegate.swift */,
@@ -281,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				5218C6B229E8363A00354F7F /* CollectionImageVC.swift */,
+				E3ED37572A1E3C8000D7F230 /* SplashViewController.swift */,
 				096C9F9329C8B7F2007A2753 /* HomeScreenVC.swift */,
 				52241A9F29E5616C007AB5E6 /* SideManuVC.swift */,
 				520864BF29E6AB8C00D6D382 /* HomeWorkoutVC.swift */,
@@ -605,8 +611,10 @@
 				09F4F39029FAFE060059BD1E /* newTableViewCell.swift in Sources */,
 				52D70F0029F93B0D00748A8D /* HomeCellImage.swift in Sources */,
 				093D74C529F6FC5800AD7AAF /* VCTableCell.swift in Sources */,
+				E3ED37582A1E3C8000D7F230 /* SplashViewController.swift in Sources */,
 				520864C029E6AB8C00D6D382 /* HomeWorkoutVC.swift in Sources */,
 				093E48B529F536FF0041DA03 /* MyGalleryVC.swift in Sources */,
+				E31B68B82A24CB6400D20D2B /* SplashScreenVC.swift in Sources */,
 				522C96CB29D30C9C00308C77 /* TabBarControl.swift in Sources */,
 				5267B6B429C32FAC0031994D /* myUserData.swift in Sources */,
 				5220A74629C472FF00AD016F /* EditProfileData.swift in Sources */,

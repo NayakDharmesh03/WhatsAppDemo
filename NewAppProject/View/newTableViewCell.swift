@@ -8,7 +8,8 @@
 import UIKit
 
 class newTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var actorImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
